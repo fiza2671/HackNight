@@ -1,0 +1,36 @@
+body{
+    background-color:blanchedalmond;
+}#main{
+    
+    margin:50px;
+   
+}
+.main{
+    text-align: center;
+    
+}
+.input{
+    text-align: center;
+
+}
+h1{
+    color:blueviolet;
+}
+.submit{
+    text-align: center;
+}
+button{
+    background-color: chartreuse;
+
+}
+.input1{
+    width:30%;
+    border:1px solid black;
+    padding: 10px;
+}
+.submit1{
+    width:10%;
+    border:1px solid black;
+    border-radius: 10px;
+    padding: 10px;
+}
