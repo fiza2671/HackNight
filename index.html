@@ -11,14 +11,14 @@
     
     <div id=main>
     <div class="main">
-        <h1 >Github API</h1>
-        <h1>find the user</h1>
+        <h1 >GITHUB</h1>
+        <h1>Profile Finder</h1>
     </div><br>
     <div class="input">
         <input class="input1" id="search" type="text" placeholder="search user">
     </div><br><br>
     <div class="submit">
-        <button  onclick="function1()" class="submit1">submit</button>
+        <button  onclick="function1()" class="submit1">SEARCH</button>
     </div><br>
     <div id="result"></div>
 </div>
@@ -33,7 +33,7 @@
 
             document.getElementById("result").innerHTML =`
              <a href="http://www.github.com/${user}"><img src="${data.avatar_url}"/></a>
-             <h1>just click the image to view their github account</h1>
+             <h1>Click the image to view their github account</h1>
             `
         })
     }
