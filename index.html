@@ -8,6 +8,7 @@
     <title>find the user</title>
 </head>
 <body>
+    
     <div id=main>
     <div class="main">
         <h1 >Github API</h1>
@@ -17,9 +18,26 @@
         <input class="input1" id="search" type="text" placeholder="search user">
     </div><br><br>
     <div class="submit">
-        <button class="submit1">submit</button>
-    </div>
+        <button  onclick="function1()" class="submit1">submit</button>
+    </div><br>
+    <div id="result"></div>
 </div>
+<script>
+    function function1(){
+       var name=document.getElementById("search").value
+       var user=name.split(' ').join('')
+       fetch("https://api.github.com/users/"+user)
+        .then((result) => result.json())
+        .then((data) =>{
+            console.log(data)
+
+            document.getElementById("result").innerHTML =`
+             <a href="http://www.github.com/${user}"><img src="${data.avatar_url}"/></a>
+             <h1>just click the image to see his github account</h1>
+            `
+        })
+    }
+</script>
 
 </body>
 </html>
